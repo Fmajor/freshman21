@@ -1,0 +1,151 @@
+/**
+ * Fmajor's style
+ */
+
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: auto 110%;
+}
+
+#sidebar-module-about {
+    text-align: center
+}
+
+.site-footer {
+   margin: 0px 0;
+   padding: 30px 0;
+   font-size: 14px;
+}
+
+div.header {
+  overflow: hidden;
+  text-align: center; }
+
+img.header {
+ min-width:2048px;
+ min-height:190px;
+ margin-right:-100%;
+ margin-left:-100%;
+}
+
+.container {
+ padding-top:0px;
+ padding-right:0px;
+ padding-left:0px;
+ margin-top:10px;
+ margin-right:10px;
+ margin-left:10px;
+ opacity: 0.95
+}
+
+.page-content {
+        padding-bottom: 0px;
+}
+
+.col-sm-2{
+  position:relative;
+  min-height:1px;
+  margin-right: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  //max-width:400px;
+  min-width:250px;
+}
+
+.col-sm-8{
+  position:relative;
+  min-height:1px;
+  margin: 0px 0px;
+  padding-left:20px;
+}
+
+img.small {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position:absolute;
+    right: 40px;
+    margin-top: -54px;
+    visibility: hidden
+}
+
+@media screen and (min-width : $on-laptop) {
+  .col-sm-8 {
+    float:left;
+    width:70%;
+  }
+  .col-sm-2 {
+    float:right;
+    width:27%;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-align: left;
+    margin: auto;
+  }
+}
+
+
+@media screen and (min-width : $on-palm) and (max-width : $on-big){
+  .container {
+    padding-top:0px;
+    padding-right:0px;
+    padding-left:0px;
+    margin-top:20px;
+    margin-right:20px;
+    margin-left:20px;
+  }
+
+  .site-footer, .col-sm-8 {
+    transition: 1s all;
+    float:left;
+    width:100%;
+    background-color: white
+  }
+
+  .col-sm-2 {
+    transition: 1s all;
+    background: white;
+    min-width: 0px;
+    right: 0px;
+    width: 300px;
+    opacity: 0.95;
+    position:absolute;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    text-align: center;
+    visibility: hidden
+  }
+
+  .col-sm-2-father:hover .col-sm-2 {
+    transition: 1s all;
+    visibility: visible;
+  }
+  img.small {
+    transition: 1s all linear;
+    visibility: visible;
+  }
+}
+
+.about img{
+  margin-top: 20px;
+}
+
+.sidebar-module {
+  padding: 0px;
+  margin: 0 -15px 15px;
+  font-size: 14px; }
+  .sidebar-module h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #424242; }
+  .sidebar-module li {
+    list-style: none; }
+
+#markdown-toc {
+  max-width: 300px;
+}

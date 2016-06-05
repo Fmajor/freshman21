@@ -1,10 +1,13 @@
-<div class="col-sm-2">
-{% include Aboutme.html %}
-{% include Copyright_Notice.html %}
-{% include Recent_Posts.html %}
-{% include Categories.html %}
-{% include Tags.html %}
-{% include Blogroll.html %}
-{% include Archives.html %}
+<div class="col-sm-2-father">
+    <img class="small" title="{{site.author}}" src="{{site.aboutme_photo| prepend:site.baseurl}}" alt="{{site.author}}"/>
+    <div class="col-sm-2">
+    {% include Aboutme.html %}
+    {% include Tags.html %}
+    {% include Categories.html %}
+    {% include Archives.html %}
+    {% include Recent_Posts.html %}
+    {% include Blogroll.html %}
+    {% include Thanks.html%}
+    {% include Copyright_Notice.html %}
+    </div>
 </div>
-

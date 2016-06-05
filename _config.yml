@@ -1,27 +1,31 @@
+
 ### Site info:
-title: Freshman21
-tagline: Another Jekyll theme, Freshman twenty-first
-author: Lijia Yu
-email: yu@lijiayu.net
+title:
+tagline:
+author: Fmajor
+email: wujinnnnn@gmail.com
 description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
 keywords: "Jekyll, theme, Freshman21"
-baseurl: "/freshman21" # the subpath of your site, e.g. /blog
-url: "http://yulijia.net/freshman21" # the base hostname & protocol for your site
+baseurl: "/freshman" # the subpath of your site, e.g. /blog
+url: "http://127.0.0.1" # the base hostname & protocol for your site
 locale: en_US
+headerFig: "/images/header-long.png"
+background: "/images/background.png"
+postsMedia: "/media/posts"
 
 ### Personal info and site tools info:
-twitter_username: yulijia
-github_username:  yulijia
-disqus_shortname: freshman21
-favicon:     "/images/favicon.ico"
-aboutme: Hi, this is Lijia Yu. I made the Freshman21 theme. Please enjoy it. # these are shown on aboutme-sidebar.
-aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg # your photo.
+twitter_username:
+github_username: Fmajor
+disqus_shortname: fmajor
+favicon: "/images/favicon.ico"
+aboutme: "我们是逝去的恒星,</br>仰望着天上的同伴" # these are shown on aboutme-sidebar.
+aboutme_photo: "/images/photo.jpg" # your photo.
 
 
 ### Site setting:
-ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown when ShowContactInfo == True
+ShowContactInfo: "False" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown when ShowContactInfo == True
 default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
-default_locale: "en" # blog sidebar language set, only include: English(en) and Chinese (cn)
+default_locale: "cn" # blog sidebar language set, only include: English(en) and Chinese (cn)
 
 locales:
     en:
@@ -35,33 +39,42 @@ locales:
       Previous: "Older"
       Next: "Newer"
       PostedInCategories: "Posted in"
-      Taggedwith: "and tagged"  
+      Taggedwith: "and tagged"
       PostDate: "on "
     cn:
       Aboutme: "关于我"
       Archives: "存档"
-      Blogroll: "良师益友"        
-      Categories: "分类目录"    
+      Blogroll: "友链"
+      Categories: "分类目录"
       Copyright_Notice: "版权声明"
       Recent_Posts: "近期文章"
-      Tags: "标签" 
+      Tags: "标签"
       Previous: "前一页"
       Next: "后一页"
-      PostedInCategories: "目录:"   
+      PostedInCategories: "目录:"
       Taggedwith: "| 标签:"
       PostDate: "| 发表时间: "
+      Thanks: "致谢"
 
 
 ### your Blogroll info, only name can shown on the page.
 
 Blogroll:
-    - name: Freshman21
-      href: http://yulijia.net/freshman21
-      title: Another Jekyll blog theme
-    - name: author's website
-      href: http://yulijia.net/
-      title: Lijia Yu's website
-
+    - name: 云居
+      href: http://gerry.lamost.org/blog/
+      title: 云居
+    - name: 剧毒姐姐
+      title: 剧毒姐姐
+      href: http://sistoxic.com/
+    - name: 星海流光
+      title: 星海流光
+      href: http://cma.lamost.org/
+    - name: 苍宇狂想
+      title: 苍宇狂想
+      href: http://eagle.lamost.org/
+    - name: 蘑菇天文馆
+      title: 蘑菇天文馆
+      href: http://blog.atr.me/
 
 ### Build settings
 markdown: kramdown
@@ -71,3 +84,20 @@ kramdown:
         syntax_highlighter: rouge
 gems: [jekyll-paginate]
 paginate: 5
+
+defaults:
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "posts"
+      author: "Fmajor"
+      category: "blog"
+
+
+collections:
+    blog:
+        output: false
+        #permalink: /oldPosts/:path/
+
+
