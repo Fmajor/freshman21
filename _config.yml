@@ -1,4 +1,3 @@
-exclude: [_posts/blog]
 
 ### Site info:
 title:
@@ -19,7 +18,7 @@ twitter_username:
 github_username: Fmajor
 disqus_shortname: fmajor
 favicon: "/images/favicon.ico"
-aboutme: "我们是逝去的恒星</br>仰望着天上的同伴" # these are shown on aboutme-sidebar.
+aboutme: "我们是逝去的恒星,</br>仰望着天上的同伴" # these are shown on aboutme-sidebar.
 aboutme_photo: "/images/photo.jpg" # your photo.
 
 
