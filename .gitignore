@@ -3,3 +3,6 @@ _site
 _posts/blog
 makefile
 build
+_drafts
+*.swp
+*~
