@@ -1,3 +1,11 @@
+exclude: [
+    _posts/2013-10-10-milu.md,
+    _posts/2014-12-13-simple-post.md,
+    _posts/2014-12-18-how-to-install.md,
+    _posts/2014-12-19-freshman21-structure.md,
+    _posts/2014-12-19-how-to-set-the-config-file.md,
+    _posts/2015-03-31-2.0version.md
+]
 
 ### Site info:
 title:

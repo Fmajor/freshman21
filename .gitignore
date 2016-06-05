@@ -3,6 +3,7 @@ _site
 _posts/blog
 makefile
 build
+_js
 media
 _drafts
 *.swp
