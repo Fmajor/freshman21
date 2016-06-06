@@ -103,6 +103,14 @@ Syntax highlighting via Pygments
 }
 {% endhighlight %}
 
+<pre class="brush: css">
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
+}
+</pre>
+
 
 #### highlight with line number.
 

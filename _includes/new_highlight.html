@@ -1,0 +1,29 @@
+{% assign postID={{page.path | split:"/" | last | split:"." | first| replace:'-','_'}}%}
+{% assign postID={{postID | append: "_" | append: include.count}} %}
+
+<head><style type="text/css"> .class_{{postID}} { margin-top: 5px !important; } </style>
+<script type="text/javascript">
+var name_{{postID}}=0;
+function c_{{postID}}() {
+var todo = document.getElementsByClassName("class_{{postID}}")[0];
+if (name_{{postID}}==0){
+  document.name_{{postID}}.src ="{{site.baseurl}}{{site.site_assets}}/down.png";
+  todo.style.maxHeight="400px";
+  name_{{postID}} = 1- name_{{postID}};
+} else {
+  document.name_{{postID}}.src ="{{site.baseurl}}{{site.site_assets}}/up.png";
+  todo.style.maxHeight="none";
+  name_{{postID}} = 1- name_{{postID}};
+} }
+</script>
+</head>
+<div class="highlight-bar">
+<p style="float: left"> {{include.title}} </p>
+<img class="highlight-botton" name="name_{{postID}}" src="{{site.baseurl}}{{site.site_assets}}/up.png" onmousedown="c_{{postID}}()" alt="Make the height to be less than 400pixel"/>
+<p style="float: right"> {% if include.language_show %} {{include.language_show}} {% else %} {{include.language}} {% endif %} &nbsp;</p>
+</div>
+
+<pre class="brush: {{include.language}}; auto-links: {{include.auto-links}};
+            class-name:class_{{postID}}; gutter:{{include.gutter}}; highlight:{{include.highlight}};
+            first-line: {{include.first-line}}; html-script:{{include.html-script}};
+            smart-tabs: {{include.smart-tabs}}; tabSize: {{include.tabSize}}">
