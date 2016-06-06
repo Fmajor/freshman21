@@ -4,7 +4,7 @@ _posts/blog
 makefile
 build
 _js
-media
+assets/post
 _drafts
 *.swp
 *~
