@@ -1,3 +1,4 @@
+exclude: [_posts/blog]
 
 ### Site info:
 title:
