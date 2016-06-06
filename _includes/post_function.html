@@ -1,0 +1,5 @@
+{% assign postID={{page.path | split:"/" | last | split:"." | first| replace:'-','_'}}%}
+{% assign mediaDir={{page.path | split:"/" | last | split:"." | first|prepend: "/" | prepend:site.postsMedia| prepend:site.baseurl}} %}
+
+{% assign thisCount=0 %}
+
